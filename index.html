@@ -9,16 +9,34 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body onload="initialize()">
-    <h1>hi</h1>
-    <div id="clock"></div>
-    <div id="display"></div>
-    <div id="log"></div>
-    <div>
-        <button id="button1" onclick="changeValue1()">0</button>
-        <button id="button2" onclick="changeValue2()">0</button>
-        <button id="button3" onclick="changeValue3()">0</button>
-        <button id="Clear" onclick="clear()">Clear</button>
-        <button id="Submit" onclick="checkCode()">Submit</button>
+    <h1>CodeBreaker</h1>
+    <div class="container">
+            <div class="clockContainer">
+                Guesses Left: 
+            <div id="clock"></div>
+            </div>
+        <div class="show">
+            <div id="display"></div>
+        </div>
+        <div class="userContainer">
+            <div class="subContainer">
+                <div class="logDisplay">
+                <div id="log">Previous Guesses:</div>
+                </div>
+                <div class="buttonWrapper">
+                    <div class="buttons" id="displayButtons">
+                        <button id="button1" onclick="changeValue1()">0</button>
+                        <button id="button2" onclick="changeValue2()">0</button>
+                        <button id="button3" onclick="changeValue3()">0</button>
+                    </div>
+                    <div class="buttons" id="optionButtons">
+                        <button id="reset" onclick="reset();">Reset</button>
+                        <button id="Clear" onclick="clearUserCode()">Clear</button>
+                        <button id="Submit" onclick="checkCode()">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
